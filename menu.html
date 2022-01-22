@@ -8,42 +8,81 @@
     <title>Menu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="restaurantStyles.css">
+    <style>
+        .col,
+        .col-sm,
+        .col-sm-2,
+        td {
+            background-color: #777777;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        .item,
+        th {
+            font-size: larger;
+        }
+        
+        td {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Menu</h1>
+        <h1>Hole in the Wall Restaurant - Menu</h1>
     </header>
     <nav>
         <hr>
-        <p><a href="index.html">Home</a> <a href="">Menu</a> <a href="contact-Us.html">Contact Us</a> </p>
+        <p><a class="btn badge-pill" href="index.html">Home</a> <a class="btn badge-pill" href="">Menu</a> <a class="btn badge-pill" href="contact-Us.html">Contact Us</a> </p>
         <hr>
     </nav>
     <section>
-        <table>
-            <tr>
-                <th>Pulled Pork Sandwich</th>
-                <th>Brisket Sandwich</th>
-                <th>Quarter Pound Beef Burger</th>
-            </tr>
-            <tr>
-                <td>Slow Roast and smoked for 5 Hours, season with our in house dry rub, dressed in our house Barbeque sauce and served with our wedge fries and coleslaw<br>$11.95</td>
-                <td>Roasted in our in house dry rub, cooked to medium perfection, and dressed in our house barbeque sauce. served with wedge fries and coleslaw<br>$10.95</td>
-                <td>made from our in house mix of sirloin and butt, topped with our house barbeque sauce, pickles, onions, lettuce and tomatoes. served with wedge fries and coleslaw <br> $9.95</td>
-            </tr>
-            <tr>
-                <th>Sloppy Joe</th>
-                <th>House Made Sausage</th>
-                <th>Wedge Fries Poutine</th>
-            </tr>
-            <tr>
-                <td>A tailor made mix of pork and beef, dressed in Worcestershire and our house barbeque sauce. served with wedge fries and coleslaw<br>$8.95</td>
-                <td>Your choice of Three of our housemade sausages, served with your choice of sauces. served with wedge fries and coleslaw<br>$6.95</td>
-                <td>Our house cut wedge fries served with american cheddar and our house barbeque sauce. <br> $5.95 </td>
-            </tr>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm"><span class="item">Pulled Pork Sandwich</span><br>Slow Roast and smoked for 5 Hours, season with our in house dry rub, dressed in our house Barbeque sauce and served with our wedge fries and coleslaw<br>$11.95</div>
+                <div class="col-sm"><span class="item">Brisket Sandwich</span><br>Roasted in our in house dry rub, cooked to medium perfection, and dressed in our house barbeque sauce. served with wedge fries and coleslaw<br>$10.95</div>
+                <div class="col-sm"><span class="item">Quarter Pound Beef Burger</span><br>made from our in house mix of sirloin and butt, topped with our house barbeque sauce, pickles, onions, lettuce and tomatoes. served with wedge fries and coleslaw <br> $9.95</div>
+            </div>
+            <div class="row">
+                <div class="col-sm"><span class="item">Sloppy Joe</span><br>A tailor made mix of pork and beef, dressed in Worcestershire and our house barbeque sauce. served with wedge fries and coleslaw<br>$8.95</div>
+                <div class="col-sm"><span class="item">House Made Sausage</span><br> Your choice of Three of our housemade sausages, served with your choice of sauces. served with wedge fries and coleslaw<br>$6.95</div>
+                <div class="col-sm"><span class="item">Wedge Fries Poutine</span><br> Our house cut wedge fries served with american cheddar and our house barbeque sauce. <br> $5.95</div>
+            </div>
+            <div class="row">
+                <div class="col-sm">Beverages</div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-sm-2">
+                    <table>
+                        <tr>
+                            <th>Soft Drinks</th>
+                            <td>$1.50</td>
+                        </tr>
+                        <tr>
+                            <th>Shakes</th>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <th>Beer</th>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <th>Water</th>
+                            <td>$1.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col"></div>
+            </div>
 
-        </table>
+        </div>
     </section>
     <script src="" async defer></script>
 </body>
