@@ -6,11 +6,13 @@ function modulo(number, mod) {
     return result;
 }
 
-class Carousel {
+const buttonPrevious = document.getElementById("data-carousel-button-previous");
+buttonPrevious.addEventListener('click', () => console.log('clicked Previous'));
+/*class Carousel {
     constructor(carousel) {
-        this.buttonPrevious = carousel.querySelector('data-carousel-button-previous');
-        this.buttonNext = carousel.querySelector('data-carousel-button-next');
-        this.slidesContainer = carousel.querySelector('data-carousel-slides-container');
+        this.buttonPrevious = carousel.querySelector(['data-carousel-button-previous']);
+        this.buttonNext = carousel.querySelector(['data-carousel-button-next']);
+        this.slidesContainer = carousel.querySelector(['data-carousel-slides-container']);
         this.currentSlide = 0;
         this.numSlides = this.slidesContainer.children.length;
 
@@ -30,4 +32,4 @@ class Carousel {
 }
 
 const carousels = document.querySelectorAll("[data-carousel]");
-carousels.forEach(carouselElement => new Carousel(carouselElement));
+carousels.forEach(carouselElement => new Carousel(carouselElement));*/

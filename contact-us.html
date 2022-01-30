@@ -28,36 +28,62 @@
         <hr>
     </nav>
     <section>
-        <form>
-            <label class="required">Name: </label><span> </span><input type="text" id="Name" name="Name" required><br>
-            <label class="required">Email: </label><span> </span><input type="text" id="Email" name="Email" required><br>
-            <label class="required">Phone: </label><span> </span><input type="text" id="Phone" name="Phone" required><br>
-            <label>Reason for inquiry: </label>
-            <select>
-                    <option value="default" selected>Catering</option>
-                    <option value="Private Party">Private Party</option>
-                    <option value="Feedback">Feedback</option>
-                    <option value="Other">Other</option>
-                </select><br>
-            <legend>Have you been to the restaurant?</legend>
-            <input type="radio" id="choice1" name="questionnaire" value="no">
-            <label for="choice1">No</label><input type="radio" id="choice2" name="questionnaire" value="yes">
-            <label for="choice2">Yes</label><br>
-            <legend>Best days to contact you</legend><br>
-            <input type="checkbox" id="Monday" name="contactDay" value="Monday">
-            <label for="Monday">M</label>
-            <input type="checkbox" id="Tuesday" name="contactDay" value="Tuesday">
-            <label for="Tuesday">T</label>
-            <input type="checkbox" id="Wednesday" name="contactDay" value="Wednesday">
-            <label for="Wednesday">W</label>
-            <input type="checkbox" id="Thursday" name="contactDay" value="Thursday">
-            <label for="Thursday">Th</label>
-            <input type="checkbox" id="Friday" name="contactDay" value="Friday">
-            <label for="Friday">F</label><br>
-            <label>Additional Information:</label>
-            <textarea id="info" name="info"></textarea><br>
-            <input type="submit" text="Send Request">
-        </form>
+        <div class="container">
+            <form class="form">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label class="required">Name: </label><span> </span><input type="text" class='form-control' id="Name" name="Name" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="required">Email: </label><span> </span><input type="email" class='form-control' id="Email" name="Email" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="required">Phone: </label><span> </span><input type="phone" class='form-control' id="Phone" name="Phone" required>
+                    </div>
+                </div>
+                <label>Reason for inquiry: </label>
+                <select class="form-control">
+                        <option value="default" selected>Catering</option>
+                        <option value="Private Party">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                        </select>
+                <legend>Have you been to the restaurant?</legend>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" id="choi 1" name="questionnaire" value="no">
+                    <label class="form-check-label" for="choice1">No</label>
+                </div>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" id="choice2" name="questionnaire" value="yes">
+                    <label class="form-check-label" for="choice2">Yes</label><br>
+                </div>
+                <legend>Best days to contact you</legend><br>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="form-check-inline">
+                        <input type="checkbox" id="Monday" name="contactDay" value="Monday">
+                        <label class="form-check-label" for="Monday">M</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="checkbox" id="Tuesday" name="contactDay" value="Tuesday">
+                        <label class="form-check-label" for="Tuesday">T</label>
+                    </div>
+                    <div class="form-check-inline"><input type="checkbox" id="Wednesday" name="contactDay" value="Wednesday">
+                        <label class="form-check-label" for="Wednesday">W</label>
+                    </div>
+                    <div class="form-check-inline"><input type="checkbox" id="Thursday" name="contactDay" value="Thursday">
+                        <label class="form-check-label" for="Thursday">Th</label>
+                    </div>
+                    <div class="form-check-inline"><input type="checkbox" id="Friday" name="contactDay" value="Friday">
+                        <label class="form-check-label" for="Friday">F</label><br>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <label for="info">Additional Information:</label>
+                <textarea class="form-control" id="info" name="info"></textarea><br>
+                <input type="submit" text="Send Request">
+
+            </form>
     </section>
     <script src="" async defer></script>
 </body>
