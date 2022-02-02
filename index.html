@@ -21,7 +21,17 @@
     <header class="jumbotron"></header>
     <div class="carousel" data-carousel>
         <div class="carousel-buttons">
-            <button id="carousel-button carousel-button-previous" data-carousel-button-previous><i class="fas fa-chevron-circle-left"></i></button>
+            <!-- <button id="carousel-button carousel-button-previous" data-carousel-button-previous><i class="fas fa-chevron-circle-left"></i></button> -->
+            <button class="carousel-button carousel-button-previous" id="carousel-button-previous" data-carousel-button-previous>
+                <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <!--
+                Hi, I'll write comments here to try to explain things.
+                I've commented the original previous-button above and replaced it with a different version. The original was almost there but had a small mistake.
+                The id attribute should only have a single value in there. It was id="carousel-button carousel-button-previous". Instead, it should have been something like id="carousel-button-previous". One value with no spaces.
+                The data attribute was correct.
+                Please see the script.js file for more comments.
+            -->
             <button class="carousel-button carousel-button-next" data-carousel-button-next><i class="fas fa-chevron-circle-right"></i></button>
         </div>
         <div class="slides" data-carousel-slides-container>
